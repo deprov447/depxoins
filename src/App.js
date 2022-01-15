@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Airdrop from "./Airdrop";
 
 const App = () => {
   const [walletConnected, setWalletConnected] = useState(false);
@@ -48,6 +49,13 @@ const App = () => {
       <button onClick={walletConnectionHelper} disabled={loading}>
         {!walletConnected ? "Connect Wallet" : "Disconnect Wallet"}
       </button>
+
+      <Airdrop
+        loading={loading}
+        setLoading={setLoading}
+        provider={provider}
+        walletConnected={walletConnected}
+      />
     </div>
   );
 };
