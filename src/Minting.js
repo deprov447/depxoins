@@ -86,30 +86,30 @@ const Minting = ({ loading, walletConnected, setLoading, provider }) => {
   return (
     <>
       {walletConnected ? (
-        <p>
-          Create your own token
-          <button disabled={loading} onClick={initialMintHelper}>
-            Initial Mint{" "}
-          </button>
-        </p>
+        <>
+          <li>
+            Create your own token{" "}
+            <button disabled={loading} onClick={initialMintHelper}>
+              Initial Mint{" "}
+            </button>
+          </li>
+          <MintAgain
+            loading={loading}
+            setLoading={setLoading}
+            provider={provider}
+            mintingWalletSecretKey={mintingWalletSecretKey}
+            createdTokenPublicKey={createdTokenPublicKey}
+          />
+          <Transfers
+            setLoading={setLoading}
+            provider={provider}
+            mintingWalletSecretKey={mintingWalletSecretKey}
+            createdTokenPublicKey={createdTokenPublicKey}
+          />
+        </>
       ) : (
         <></>
       )}
-
-      <MintAgain
-        loading={loading}
-        setLoading={setLoading}
-        provider={provider}
-        mintingWalletSecretKey={mintingWalletSecretKey}
-        createdTokenPublicKey={createdTokenPublicKey}
-      />
-
-      <Transfers
-        setLoading={setLoading}
-        provider={provider}
-        mintingWalletSecretKey={mintingWalletSecretKey}
-        createdTokenPublicKey={createdTokenPublicKey}
-      />
     </>
   );
 };

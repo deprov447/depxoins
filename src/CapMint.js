@@ -50,9 +50,9 @@ const CapMint = ({
   };
 
   return (
-    <>
+    <li>
       <button onClick={capSupplyHelper}>Cap Minting</button>
-    </>
+    </li>
   );
 };
 

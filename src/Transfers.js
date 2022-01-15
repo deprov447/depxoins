@@ -83,10 +83,15 @@ const Transfers = ({
   };
 
   return (
-    <>
-      Address of Receiver: <input type="text" id="receiverAddress" />
+    <li>
+      Transfer coin:
+      <input
+        type="text"
+        id="receiverAddress"
+        placeholder=" Address of Receiver"
+      />
       <button onClick={sendCryptoHandler}>Send Coins</button>
-    </>
+    </li>
   );
 };
 

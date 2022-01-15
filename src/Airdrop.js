@@ -31,12 +31,12 @@ const Airdrop = ({ loading, setLoading, provider, walletConnected }) => {
   return (
     <>
       {walletConnected ? (
-        <p>
+        <li>
           Airdrop 1 SOL into your wallet
           <button disabled={loading} onClick={airDropHelper}>
             AirDrop SOL{" "}
           </button>
-        </p>
+        </li>
       ) : (
         <></>
       )}

@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Tenor+Sans&family=Titillium+Web:ital,wght@1,600&display=swap");
+
+/* 
+    font-family: 'Lato', sans-serif;
+    font-family: 'Tenor Sans', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+*/
+
+body {
+  background: linear-gradient(45deg, #000850 0%, #000320 100%),
+    radial-gradient(100% 225% at 100% 0%, #ff6928 0%, #000000 100%),
+    linear-gradient(225deg, #ff7a00 0%, #000000 100%),
+    linear-gradient(
+      135deg,
+      #cdffeb 10%,
+      #cdffeb 35%,
+      #009f9d 35%,
+      #009f9d 60%,
+      #07456f 60%,
+      #07456f 67%,
+      #0f0a3c 67%,
+      #0f0a3c 100%
+    );
+  background-blend-mode: soft-light, overlay, darken, normal;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lato", sans-serif;
+  color: rgba(231, 165, 43, 0.993);
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+li {
+  list-style: none;
+  background: rgba(255, 3, 3, 0.466);
+  padding: 15px 30px;
+  font-family: "Tenor Sans", sans-serif;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 0.9rem;
+  justify-self: flex-end;
+  background-color: rgba(255, 166, 0, 0.568);
+  border: none;
+  padding: 5px 20px;
+  color: rgba(0, 0, 0, 0.959);
+}

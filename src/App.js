@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Airdrop from "./Airdrop";
 import Minting from "./Minting";
+import "./styles.css";
 
 const App = () => {
   const [walletConnected, setWalletConnected] = useState(false);
