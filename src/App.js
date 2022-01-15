@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import Airdrop from "./Airdrop";
+import Minting from "./Minting";
 
 const App = () => {
   const [walletConnected, setWalletConnected] = useState(false);
@@ -55,6 +56,13 @@ const App = () => {
         setLoading={setLoading}
         provider={provider}
         walletConnected={walletConnected}
+      />
+
+      <Minting
+        loading={loading}
+        walletConnected={walletConnected}
+        setLoading={setLoading}
+        provider={provider}
       />
     </div>
   );
