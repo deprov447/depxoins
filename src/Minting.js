@@ -9,6 +9,7 @@ import {
 import { Token, TOKEN_PROGRAM_ID } from "@solana/spl-token";
 
 import { useState } from "react";
+import MintAgain from "./MintAgain";
 
 const Minting = ({ loading, walletConnected, setLoading, provider }) => {
   const [isTokenCreated, setIsTokenCreated] = useState(false);
@@ -93,6 +94,14 @@ const Minting = ({ loading, walletConnected, setLoading, provider }) => {
       ) : (
         <></>
       )}
+
+      <MintAgain
+        loading={loading}
+        setLoading={setLoading}
+        provider={provider}
+        mintingWalletSecretKey={mintingWalletSecretKey}
+        createdTokenPublicKey={createdTokenPublicKey}
+      />
     </>
   );
 };
