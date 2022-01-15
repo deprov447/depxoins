@@ -15,6 +15,7 @@ import {
 import { Token, TOKEN_PROGRAM_ID } from "@solana/spl-token";
 
 import { useState } from "react";
+import CapMint from "./CapMint";
 
 const MintAgain = ({
   loading,
@@ -93,6 +94,13 @@ const MintAgain = ({
           Mint Again
         </button>
       </li>
+
+      <CapMint
+        setLoading={setLoading}
+        createdTokenPublicKey={createdTokenPublicKey}
+        setSupplyCapped={setSupplyCapped}
+        mintingWalletSecretKey={mintingWalletSecretKey}
+      />
     </>
   );
 };
