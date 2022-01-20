@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/depxoins/static/css/main.36da3b76.css",
+    "main.js": "/depxoins/static/js/main.2014335d.js",
+    "index.html": "/depxoins/index.html",
+    "main.36da3b76.css.map": "/depxoins/static/css/main.36da3b76.css.map",
+    "main.2014335d.js.map": "/depxoins/static/js/main.2014335d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.36da3b76.css",
+    "static/js/main.2014335d.js"
+  ]
+}
